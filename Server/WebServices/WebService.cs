@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Server
+namespace Server.WebServices
 {
     public class WebService
     {
@@ -9,4 +9,3 @@ namespace Server
         }
     }
 }
-
