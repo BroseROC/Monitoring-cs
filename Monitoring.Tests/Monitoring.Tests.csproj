@@ -52,6 +52,10 @@
       <Project>{59D3D1E7-1A01-489B-A4C0-FB96639C46D2}</Project>
       <Name>Monitoring</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Server\Server.csproj">
+      <Project>{588634C8-788F-423E-BB6D-CBA50F14B6D4}</Project>
+      <Name>Server</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
