@@ -8,7 +8,7 @@ namespace Server.WebServices.Models
         {
         }
 
-        DateTime ServerDT;
+        public DateTime ServerDT;
         public String Version;
     }
 }
