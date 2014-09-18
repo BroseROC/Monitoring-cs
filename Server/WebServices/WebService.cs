@@ -19,7 +19,7 @@ namespace Server.WebServices
             using (WebApp.Start<WebService>(url: BaseAddress))
             {
                 HttpClient client = new HttpClient();
-                    var result = client.GetAsync(BaseAddress + "api/status").Result;
+                var result = client.GetAsync(BaseAddress + "status/").Result;
                 Console.WriteLine(result);
                 Console.WriteLine(result.Content.ReadAsStringAsync().Result);
                 Console.ReadLine();
@@ -33,7 +33,8 @@ namespace Server.WebServices
             config.Routes.MapHttpRoute(
                 name: "DefaultApi", 
                 routeTemplate: "{controller}/{action}/{id}", 
-                defaults: new { id = RouteParameter.Optional } 
+                defaults: new { id = RouteParameter.Optional,
+                            action = RouteParameter.Optional} 
             ); 
 
             appBuilder.UseWebApi(config); 

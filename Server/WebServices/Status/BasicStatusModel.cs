@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Server.WebServices.Models
+namespace Server.WebServices.Status
 {
     public class BasicStatusModel
     {

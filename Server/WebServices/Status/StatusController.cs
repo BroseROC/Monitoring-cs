@@ -2,10 +2,9 @@
 using System.Net;
 using System.Web.Http;
 
-using Server.WebServices.Models;
-
-namespace Server.WebServices.Controllers
+namespace Server.WebServices.Status
 {
+    [RoutePrefix("status")]
     public class StatusController : ApiController
     {
         public StatusController()
@@ -13,9 +12,9 @@ namespace Server.WebServices.Controllers
         }
 
 
-        [ActionName("")]
         [HttpGet]
-        public IHttpActionResult Get(){
+        public IHttpActionResult Get()
+        {
             BasicStatusModel model = new BasicStatusModel();
             model.Version = "0";
             model.ServerDT = DateTime.Now;
