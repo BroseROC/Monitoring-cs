@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Monitoring.RunningTotals.Defaults
+namespace Monitoring.Metrics.RunningTotals.Defaults
 {
 	public class RunningTotalDefault_Min : IRunningTotalCalculation
 	{

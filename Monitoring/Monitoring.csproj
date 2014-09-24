@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
-  <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{59D3D1E7-1A01-489B-A4C0-FB96639C46D2}</ProjectGuid>
@@ -14,7 +14,6 @@
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-  <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-  <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
@@ -43,15 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Metric.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RunningTotals\ApplyFunctionCommand.cs" />
-    <Compile Include="RunningTotals\IRunningTotalCalculation.cs" />
-    <Compile Include="RunningTotals\RunningTotal.cs" />
-    <Compile Include="RunningTotals\Defaults\RunningTotalDefault_Average.cs" />
-    <Compile Include="RunningTotals\Defaults\RunningTotalDefault_Max.cs" />
-    <Compile Include="RunningTotals\Defaults\RunningTotalDefault_Min.cs" />
-    <Compile Include="RunningTotals\RunningTotalCurrentValue.cs" />
+    <Compile Include="Metrics\RunningTotals\ApplyFunctionCommand.cs" />
+    <Compile Include="Metrics\RunningTotals\Defaults\RunningTotalDefault_Average.cs" />
+    <Compile Include="Metrics\RunningTotals\Defaults\RunningTotalDefault_Max.cs" />
+    <Compile Include="Metrics\RunningTotals\Defaults\RunningTotalDefault_Min.cs" />
+    <Compile Include="Metrics\RunningTotals\IRunningTotalCalculation.cs" />
+    <Compile Include="Metrics\RunningTotals\RunningTotal.cs" />
+    <Compile Include="Metrics\RunningTotals\RunningTotalCurrentValue.cs" />
+    <Compile Include="Metrics\Metric.cs" />
+    <Compile Include="Storage\JSONStore.cs" />
+    <Compile Include="Storage\IStorageHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -65,7 +65,7 @@
   </Target>
   -->
   <ItemGroup>
-    <Folder Include="RunningTotals\" />
-    <Folder Include="RunningTotals\Defaults\" />
+    <Folder Include="Metrics\" />
+    <Folder Include="Storage\" />
   </ItemGroup>
 </Project>

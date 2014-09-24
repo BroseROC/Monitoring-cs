@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Monitoring.RunningTotals
+namespace Monitoring.Metrics.RunningTotals
 {
 	public class RunningTotal
 	{

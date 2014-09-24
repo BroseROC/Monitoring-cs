@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using Monitoring.RunningTotals;
+using Monitoring.Metrics.RunningTotals;
 
-namespace Monitoring
+namespace Monitoring.Metrics
 {
 	public class Metric
 	{

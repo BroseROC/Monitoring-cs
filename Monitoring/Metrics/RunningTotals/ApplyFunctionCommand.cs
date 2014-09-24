@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Monitoring.RunningTotals
+namespace Monitoring.Metrics.RunningTotals
 {
     public class ApplyFunctionCommand
     {

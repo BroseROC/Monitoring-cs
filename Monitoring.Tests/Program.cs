@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Monitoring.RunningTotals;
-using Monitoring.RunningTotals.Defaults;
+using Monitoring.Metrics.RunningTotals;
+using Monitoring.Metrics.RunningTotals.Defaults;
+using Monitoring.Metrics;
 
-namespace Monitoring
+
+namespace Monitoring.Tests
 {
 	public class Program
 	{

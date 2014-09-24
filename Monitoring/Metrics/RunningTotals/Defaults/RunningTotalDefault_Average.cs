@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Monitoring.RunningTotals.Defaults
+namespace Monitoring.Metrics.RunningTotals.Defaults
 {
 	public class RunningTotalDefault_Average : IRunningTotalCalculation
 	{
