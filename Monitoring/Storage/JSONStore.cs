@@ -3,7 +3,7 @@ using System.IO;
 
 namespace Monitoring.Storage
 {
-    public class JSONStore
+    public class JSONStore : IStorageHandler
     {
         public JSONStore(String storagePath)
         {
@@ -12,7 +12,9 @@ namespace Monitoring.Storage
 
         public String StoragePath;
 
-        public void Store(){}
+        public void Store()
+        {
+        }
     }
 }
 

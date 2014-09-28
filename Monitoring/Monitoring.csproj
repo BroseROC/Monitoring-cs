@@ -52,6 +52,8 @@
     <Compile Include="Metrics\Metric.cs" />
     <Compile Include="Storage\JSONStore.cs" />
     <Compile Include="Storage\IStorageHandler.cs" />
+    <Compile Include="Metrics\MetricGrouping.cs" />
+    <Compile Include="MainRouter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

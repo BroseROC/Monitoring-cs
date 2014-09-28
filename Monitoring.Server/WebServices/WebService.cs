@@ -4,7 +4,7 @@ using Microsoft.Owin.Hosting;
 using System.Web.Http;
 using Owin;
 
-namespace Server.WebServices
+namespace Monitoring.Server.WebServices
 {
     public class WebService : IDisposable
     {

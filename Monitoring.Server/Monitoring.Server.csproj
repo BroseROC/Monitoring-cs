@@ -66,13 +66,13 @@
     <Compile Include="WebServices\WebService.cs" />
     <Compile Include="WebServices\Status\StatusController.cs" />
     <Compile Include="WebServices\Status\BasicStatusModel.cs" />
-    <Compile Include="WebServices\Metrics\MetricController.cs" />
+    <Compile Include="WebServices\GroupingController.cs" />
+    <Compile Include="WebServices\AddGroupingCommand.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="WebServices\" />
     <Folder Include="WebServices\Status\" />
-    <Folder Include="WebServices\Metrics\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

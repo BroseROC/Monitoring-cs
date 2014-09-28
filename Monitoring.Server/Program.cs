@@ -2,12 +2,15 @@
 using System.Net.Http;
 using Microsoft.Owin.Hosting;
 
-using Server.WebServices;
+using Monitoring;
+using Monitoring.Server.WebServices;
 
-namespace Server
+namespace Monitoring.Server
 {
     public class MainClass
     {
+        public static MainRouter MainRouter;
+
         public static void Main(string[] args)
         {
             Console.WriteLine("Starting Server");
